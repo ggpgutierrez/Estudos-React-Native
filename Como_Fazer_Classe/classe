@@ -1,0 +1,21 @@
+class Casa {
+	constructor(cor, quantidadeQuartos){
+  	this.cor = cor;
+    this.quantidadeQuartos = quantidadeQuartos;
+  }
+  getCor(){
+  	return this.cor;
+  }
+  getQtd(){
+    return this.quantidadeQuartos;
+    }
+	abrirPortao( portao ){
+		document.write("Abrir portão: ");
+	}
+}
+
+var casa = new Casa("Vermelho", 2);
+document.write("A casa pequena tem sua cor " + casa.getCor() + " e tem um total de " + casa.getQtd() + " Quartos");
+
+var casaGrande = new Casa("Amarelo", 5);
+document.write("</br>A casa grande tem sua cor " + casaGrande.getCor() + " e tem um total de " + casaGrande.getQtd() + " Quartos");
